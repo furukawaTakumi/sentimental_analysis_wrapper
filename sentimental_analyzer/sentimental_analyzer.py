@@ -5,7 +5,8 @@ from sentimental_analyzer.analyzers import *
 class SentimentalAnalyzer:
     analyzer_dict = {
         'asari': asari_analyzer,
-        'bert': bert_analyzer
+        'bert': bert_analyzer,
+        'oseti': oseti_analyzer,
     }
 
     def __init__(self, analyzer_type: str):
