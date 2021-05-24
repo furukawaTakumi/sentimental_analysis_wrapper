@@ -1,2 +1,2 @@
 
-from .sentimental_analyzer import *
+from .sentimental_analyzer import SentimentalAnalyzer

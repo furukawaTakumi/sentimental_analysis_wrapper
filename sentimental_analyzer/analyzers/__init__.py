@@ -5,7 +5,7 @@ import re
 __all__ = []
 python_file_regex = re.compile(r'.+\.py')
 
-for filename in os.listdir(f'{os.getcwd()}/sentimental_analyzer/analyzers'):
+for filename in os.listdir(f'{os.path.dirname(__file__)}'):
     if not python_file_regex.match(filename):
         continue
     if '__init__.py' == filename:

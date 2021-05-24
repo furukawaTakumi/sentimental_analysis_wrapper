@@ -1,6 +1,6 @@
 
 
-from sentimental_analyzer.analyzers import *
+from .analyzers import *
 
 class SentimentalAnalyzer:
     analyzer_dict = {

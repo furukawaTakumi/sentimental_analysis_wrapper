@@ -1,10 +1,8 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 setup(
     name='sentimental_analyzer',
     version='0.0.0',
-    packages=[
-        'sentimental_analyzer'
-    ]
+    packages=find_packages()
 )
