@@ -13,9 +13,8 @@ class SentimentalAnalyzer:
     def __init__(self, analyzer_type: str):
         if not analyzer_type in self.analyzer_dict.keys():
             raise TypeError("'%s' is not supported." % analyzer_type)
-        # TODO: 動的にモジュールをインポートするように切り替える　他のライブラリのインスタンス化に時間がかかるため
         self.__type = analyzer_type
-        self.__analyzer = self.analyzer_dict[analyzer_type]
+        self.__analyzer = self.analyzer_dict[analyzer_type].Analyzer()
 
     @property
     def type(self):

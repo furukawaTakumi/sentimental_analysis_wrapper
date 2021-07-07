@@ -1,7 +1,10 @@
 
 from asari.api import Sonar
 
-sonar = Sonar()
 
-def analyze(text, **args):
-    return sonar.ping(text=text)
+class Analyzer:
+    def __init__(self) -> None:
+        self.sonar = Sonar()
+
+    def analyze(self, text, **args):
+        return self.sonar.ping(text=text)
