@@ -7,6 +7,7 @@ class SentimentalAnalyzer:
         'asari': asari_analyzer,
         'bert': bert_analyzer,
         'oseti': oseti_analyzer,
+        'kamaboko': kamaboko_analyzer,
     }
 
     def __init__(self, analyzer_type: str):
